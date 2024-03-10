@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    background-color: #d9d9d9;
+}
+.wrapper{
+    margin:0px 75px;
+}
+.top{
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em 0em 1em;
+}
+.top_right{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center
+}
+.TN_logo{
+    height: 85px;
+    width: 85px;
+}
+.nav_btn{
+    font-size: 1em;
+    font-weight: bolder;
+    color: dimgrey;
+    width: 75px;
+    height: 40px;
+    background-color: #d9d9d9;
+    border: 0px;
+    margin: 1px;
+    border-radius: 11px;
+    box-shadow: 1px  1px 2px;
+    transition: 300ms ease-in all;
+}
+.nav_btn:hover{
+    box-shadow: -1px 0px 2px;
+    transform: scale(1.02);
+    filter: drop-shadow(2px 4px 6px dimgrey);
+    text-shadow: 1px 1px 1.2px slategrey;
+}
+
+.content{
+    margin: 5px;
+    position: absolute;
+    /* top: 5em; */
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+.bg{
+    /* z-index: -1; */
+    position: relative;
+    /* box-shadow: 12px 12px 2px 1px; */
+}
+.head1{
+    font-size: 6em;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: dimgrey;
+    position: absolute;
+    top: -7em;
+    padding-right: 5em;
+    margin: 0.6em;
+    text-shadow: 1px 1px 2px #000, 0 0 0.3em #4b494773, 0 0 0.2em #d9d9d9;
+}
+.title_intro{
+    letter-spacing: 0.2em;
+    position: absolute;
+    font-size: 2em;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: dimgrey;
+    margin: 0 3.6em;
+    padding: 0 2em;
+    text-align: center;
+    top: -5em;
+    border: 2px solid rgb(44, 42, 42);
+    border-radius: 2em;
+    transition: 300ms ease all;
+    text-shadow: 2px 3px 4px #000, 0 0 0.3em #D7D7EC, 0 0 0.2em #D9D9E2;
+}
+.title_intro:hover{
+    transform: scale(1.02);
+}
+.content_right {
+    position: absolute;
+    top: -30rem;
+    left: 64rem;
+    object-fit: contain;
+}
+/* .content{
+    padding-right: 28em;
+} */
+.my-pic{
+    object-fit: contain;
+    border: 5px solid #868686c9;
+    height: 289px;
+    width: 265px;
+    overflow-y: hidden;
+    border-radius: 63px;
+    filter: drop-shadow(2px 4px 6px black);
+    transition: 150ms ease-in-out all;
+}
+.my-pic:hover{
+    transform: rotateY(180deg);
+    content:url('TN-logo-removebg-preview.png')
+}
+/* .my-pic::before:hover{
+} */
+.sec{
+    /* margin-left: 10rem; */
+    padding-top: 2rem;
+    padding-left: 8rem;
+}
+.ques1{
+    font-size: 6em;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: dimgrey;
+    padding-right: 9em;
+    margin: 2em 0.6em o.2em;
+    margin-top: 2em;
+    text-shadow: 1px 1px 2px #000, 0 0 0.3em #4b494773, 0 0 0.2em #d9d9d9;
+}
+.ans-content-background-img{
+    opacity: .35;
+    position: relative;
+    left: 7em;
+}
+.ans-content{
+    position: relative;
+}
+.ans-content-text{
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+    font-style: normal;
+    width: 19em;
+    font-size: xx-large;
+    letter-spacing: .2em;
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    color: dimgray;
+}
+.ans{
+    position: relative;
+}
+.ans-pic-right{
+    width: 32em;
+    height: 35em;
+    position: absolute;
+    top: -1em;
+    right: 5em;
+    transition: 300ms ease-in all;
+    perspective: 10px;
+}
+.ans-pic-right:hover{
+    transform: translateY(-50px) scaleY(1.03) translateX(-50px) scaleX(0.8);
+}
+.heading{
+    text-decoration: dashed;
+    font-size: 6em;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: dimgrey;
+    padding-right: 9em;
+    padding-bottom: 1em;
+    /* margin: 2em 0.6em o.2em; */
+    /* margin-top: 2em; */
+    text-shadow: 1px 1px 2px #000, 0 0 0.3em #4b494773, 0 0 0.2em #d9d9d9;
+}
+.content{
+    display: flex;
+    gap: 1.2em;
+    align-items: center;
+}
+figure{
+    /* border: 1px; */
+    width: 32em;
+    height: 31em;
+    border-top-right-radius: 5em;
+    box-shadow: 1px 2px 25px 3px;
+    position: relative;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+figure:hover{
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+figcaption{
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: dimgrey;
+    font-size: 1.3em;
+}
+.about-us-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: dimgrey;
+    font-size: 3.5em;
+
+}
+.about-us{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4.5em;
+}
+.label-ans{
+    color: #ffffff;
+}
+.reach-us{
+    border-radius: 4em;
+    box-shadow: 10px 10px 4px 4px;
+    margin: 4em;
+    /* width: 95vw;
+    height: 85vh; */
+}
